@@ -12,6 +12,7 @@ int _printf(char *format, ...)
 	int span = 0, i = 0;
 	va_list var_p;
 	char a;
+
 	int (*f_pt[])(va_list, char *) = {call_fmt_function};
 
 	if (format == NULL)
