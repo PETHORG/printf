@@ -39,7 +39,7 @@ int main(void)
 	_printf("Len:[%d]\n", len);
 	printf("Len:[%d]\n", len2);
 	_printf("Unknown:[%r]\n", "hello");
-/*	printf("Unknown:[%r]\n");*/
+	printf("Unknown:[%r]\n");
 	_printf("Hello %r\n", "Hello");
 /*	printf("Hello %r\n", "Hello");*/
 /*	_printf("%S\n", "Holberton\fSchool");*/
