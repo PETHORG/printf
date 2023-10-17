@@ -12,11 +12,15 @@ int handle_p_fmt(va_list ap_p)
 	unsigned long arg_int;
 	unsigned int i;
 	static const char mod[] = "0123456789abcdef";
-	static char buff[50];
+	static char *buff;
 	char *pt;
 	int count = 0;
 
 	arg_int = va_arg(ap_p, unsigned long);
+	buff = malloc(sizeof(char) * 50);
+
+	if (buff == NULL)
+		return (-1);
 
 	_putchar('0');
 	_putchar('x');

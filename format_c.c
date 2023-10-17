@@ -9,8 +9,8 @@
 
 int handle_c_fmt(va_list ap_c)
 {
-	char chrct = (char)va_arg(ap_c, int);
+	char character = (char)va_arg(ap_c, int);
 
-	_putchar(chrct);
+	_putchar(character);
 	return (1);
 }
